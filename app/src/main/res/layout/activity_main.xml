@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/main_backgroud_gradation"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:src="@drawable/main_image" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/myarirang"
+                        android:rotation="180"
+                        android:text="랑"
+                        android:textSize="60dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/myarirang"
+                        android:rotation="180"
+                        android:text="레"
+                        android:textSize="60dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/myarirang"
+                        android:rotation="180"
+                        android:text="괴"
+                        android:textSize="60dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/myarirang"
+                        android:rotation="180"
+                        android:text="스"
+                        android:textSize="60dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/myarirang"
+                        android:rotation="180"
+                        android:text="토"
+                        android:textSize="60dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="@font/myarirang"
+                        android:rotation="180"
+                        android:text="담"
+                        android:textSize="60dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/blur_title"
+                    android:layout_width="380dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/title3" />
+
+                <android.widget.Button
+                    android:id="@+id/gamestart_btn"
+                    android:layout_marginTop="350dp"
+                    android:textColor="#880000"
+                    android:text="게임시작"
+                    android:textSize="40dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/myarirang"
+                    android:background="#00ff0000"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <android.widget.Button
+                    android:id="@+id/tchange_btn"
+                    android:layout_marginTop="350dp"
+                    android:textColor="#880000"
+                    android:text="인육먹기"
+                    android:textSize="40dp"
+                    android:fontFamily="@font/myarirang"
+                    android:background="#00ff0000"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

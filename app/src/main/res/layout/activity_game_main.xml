@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".GameMain">
+
+    <TextView
+        android:id="@+id/storyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:padding="16dp"
+        android:text="여기에 스토리 내용이 표시됩니다."
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:fontFamily="@font/myarirang"
+        android:gravity="center"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:id="@+id/choicesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/storyTextView"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/choiceBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택지 1"
+            android:textSize="20dp"
+            android:fontFamily="@font/myarirang"
+            android:textColor="#FFFFFF"
+            android:background="#00ff0000" />
+
+        <Button
+            android:id="@+id/choiceBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택지 2"
+            android:textSize="20dp"
+            android:fontFamily="@font/myarirang"
+            android:textColor="#FFFFFF"
+            android:background="#00ff0000"
+            android:paddingTop="20dp" />
+
+        <Button
+            android:id="@+id/choiceBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택지 3"
+            android:textSize="20dp"
+            android:fontFamily="@font/myarirang"
+            android:textColor="#FFFFFF"
+            android:background="#00ff0000"
+            android:paddingTop="20dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/rule"
+        android:background="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/mental1"
+        android:src="@drawable/mental"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="40dp"
+        android:layout_height="50dp"/>
+
+    <ImageView
+        android:id="@+id/mental2"
+        android:src="@drawable/mental"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/mental1"
+        android:layout_width="40dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/rule"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="규칙"
+        android:textSize="30dp"
+        android:fontFamily="@font/myarirang"
+        android:background="#00ff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
